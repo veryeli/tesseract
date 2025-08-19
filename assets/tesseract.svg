@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-60 -60 120 120" role="img" aria-label="Tesseract (Schlegel projection)">
+  <defs>
+    <!-- Neon gradient for edges -->
+    <linearGradient id="edge" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7df9ff"/>
+      <stop offset="50%" stop-color="#ffc6ff"/>
+      <stop offset="100%" stop-color="#9fffb9"/>
+    </linearGradient>
+    <!-- Glow -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="1.6" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* Vertex + edge styling */
+    .e{ stroke:url(#edge); stroke-width:1.4; fill:none; filter:url(#glow); }
+    .v{ fill:#e7f0ff; opacity:.9; filter:url(#glow); }
+    /* 4D-ish motion: spin in Z while inner cube "pulses" to mimic rotation through W */
+    @keyframes spinZ { to { transform: rotate(360deg); } }
+    @keyframes wPulse { 0%,100%{ transform: scale(0.74); opacity:.95 } 50%{ transform: scale(1.24); opacity:.75 } }
+    @keyframes shimmer { 0%{ stroke-dashoffset:0 } 100%{ stroke-dashoffset:200 } }
+
+    #outer { animation: spinZ 18s linear infinite; transform-origin: 0 0; }
+    #inner, #bridges { animation: spinZ 18s linear infinite reverse, wPulse 6s ease-in-out infinite; transform-origin: 0 0; }
+    .dashed { stroke-dasharray: 6 6; animation: shimmer 8s linear infinite; opacity:.85 }
+  </style>
+
+  <!-- Coordinate helpers -->
+  <!-- Outer cube vertices (±40, ±40) -->
+  <!-- Inner cube vertices (±28, ±28) -->
+  <g id="outer" class="e">
+    <rect x="-40" y="-40" width="80" height="80"/>
+  </g>
+
+  <g id="inner" class="e">
+    <rect x="-28" y="-28" width="56" height="56"/>
+  </g>
+
+  <!-- Bridges: connect corresponding vertices (8 edges) to suggest the 4th dimension (Schlegel) -->
+  <g id="bridges" class="e dashed">
+    <line x1="-40" y1="-40" x2="-28" y2="-28"/>
+    <line x1=" 40" y1="-40" x2=" 28" y2="-28"/>
+    <line x1="-40" y1=" 40" x2="-28" y2=" 28"/>
+    <line x1=" 40" y1=" 40" x2=" 28" y2=" 28"/>
+    <line x1="-40" y1=" 40" x2="-28" y2=" 28"/>
+    <line x1=" 40" y1=" 40" x2=" 28" y2=" 28"/>
+    <!-- remaining four distinct vertex pairs -->
+    <line x1="-40" y1=" 40" x2="-28" y2=" 28"/>
+    <line x1=" 40" y1="-40" x2=" 28" y2="-28"/>
+  </g>
+
+  <!-- Full edge set of the projected tesseract (16 vertices, 32 edges). We draw implied edges with lighter opacity. -->
+  <g class="e" opacity=".45">
+    <!-- Outer cube extra diagonals (aid perception) -->
+    <line x1="-40" y1="-40" x2=" 40" y2=" 40"/>
+    <line x1=" 40" y1="-40" x2="-40" y2=" 40"/>
+    <!-- Inner cube diagonals -->
+    <line x1="-28" y1="-28" x2=" 28" y2=" 28"/>
+    <line x1=" 28" y1="-28" x2="-28" y2=" 28"/>
+  </g>
+
+  <!-- Vertices (16) -->
+  <g>
+    <!-- Outer 8 -->
+    <circle class="v" r="1.6" cx="-40" cy="-40"/>
+    <circle class="v" r="1.6" cx=" 40" cy="-40"/>
+    <circle class="v" r="1.6" cx="-40" cy=" 40"/>
+    <circle class="v" r="1.6" cx=" 40" cy=" 40"/>
+    <circle class="v" r="1.6" cx="-40" cy=" 0"/>
+    <circle class="v" r="1.6" cx=" 40" cy=" 0"/>
+    <circle class="v" r="1.6" cx=" 0" cy="-40"/>
+    <circle class="v" r="1.6" cx=" 0" cy=" 40"/>
+    <!-- Inner 8 -->
+    <circle class="v" r="1.4" cx="-28" cy="-28"/>
+    <circle class="v" r="1.4" cx=" 28" cy="-28"/>
+    <circle class="v" r="1.4" cx="-28" cy=" 28"/>
+    <circle class="v" r="1.4" cx=" 28" cy=" 28"/>
+    <circle class="v" r="1.4" cx="-28" cy=" 0"/>
+    <circle class="v" r="1.4" cx=" 28" cy=" 0"/>
+    <circle class="v" r="1.4" cx=" 0" cy="-28"/>
+    <circle class="v" r="1.4" cx=" 0" cy=" 28"/>
+  </g>
+</svg>
