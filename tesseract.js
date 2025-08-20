@@ -172,9 +172,9 @@ function updateLinks(s, zRot){
 
 // Animation loop: slow spin + subtle inner “w-pulse”
 let ticker = 0;
-const spinPeriod = 300;     // frames per full rotation
+const spinPeriod = 900;     // frames per full rotation
 const pulsePeriod = 160;    // frames per inner scale pulse
-const wobble = 0.12;        // radians wobble
+const wobble = 1;        // radians wobble
 
 function animate() {
   if (isSpinning) {

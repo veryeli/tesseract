@@ -35,8 +35,10 @@ const renderPractices = d => `
     <h2>${d.title}</h2>
     ${d.paragraphs.map(p => `<p>${p}</p>`).join("")}
   </article>
+  </section>
+  <section>
   <article class="card">
-    <h2>Sub‑Practices</h2>
+    <h2>sub‑practices</h2>
     <p>${d.subpractices.map(s => `<strong>${s.name}:</strong> ${s.desc}`).join("<br>")}</p>
   </article>
 `;
