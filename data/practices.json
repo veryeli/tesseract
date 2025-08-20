@@ -1,14 +1,17 @@
 {
-  "title": "Practices",
+  "title": "our practice",
   "paragraphs": [
-    "We are healing the world. We care for ourselves so we can help others step out of colonial metronomes and into the rhythms immanent around us. Practices are contextual: greeting or bidding farewell to the sun; honoring new and full moons, equinoxes and solstices; and other rituals. We embrace syncretic paths.",
-    "Practices also include land stewardship, communal meals, housing co‑ops, and collective celebrations. Alone we are a line; together we become a tesseract within the tesseract, stronger and holding endless tensions."
+    "is to heal the world through moving with it.",
+    "we put our oxygen masks on so we can help others to also step out of colonial metronomes and into the rhythms immanent around us.",
+    "these practices are contextual: rituals may include greeting or bidding farewell to the sun; honoring new and full moons, equinoxes and solstices. We embrace syncretic paths.",
+    "we keep in communication with ourselves and with all creation.",
+    "practices also include land stewardship, communal meals, housing co‑ops, and collective celebrations. alone we are a line; together we become a tesseract within the tesseract, stronger and holding endless tensions."
   ],
   "subpractices": [
-    {"name": "Development", "desc": "fortitude beyond resilience — sharing and creating housing, skills, and meals are ways to heal the world and help others escape colonial time."},
-    {"name": "Eras", "desc": "a future beyond resilience already exists in cosmic fabric — immanent though outside immediate perception."},
-    {"name": "Territories", "desc": "free territories have existed throughout time: Zapatistas, liberated Rojava, the Cop City resistance, Standing Rock — places of immanent tesseract practice. land is the physical manifestation of time. stewarding land and being in right relationship with it is core to our practices."},
-    {"name": "Morales", "desc": "shared music about people - is a core part of connection to time. We encourage community musical gatherings - like the Kurdish morales - to mark times of victory and defeat. the time before the morale necessitates the morale, from sorrow or delight. we let our bodies drive our rituals."},
-    {"name": "Prisons", "desc": "resisting domination of time by reclaiming felt time."}
+    {"name": "development", "desc": "fortitude beyond resilience — sharing and creating housing, skills, and meals are ways to heal the world and help others escape colonial time."},
+    {"name": "eras", "desc": "a future beyond resilience already exists in cosmic fabric — immanent though outside immediate perception."},
+    {"name": "territories", "desc": "free territories have existed throughout time: Zapatistas, liberated Rojava, the Cop City resistance, Standing Rock — places of immanent tesseract practice. land is the physical manifestation of time. stewarding land and being in right relationship with it is core to our practices."},
+    {"name": "morales", "desc": "shared music about people - is a core part of connection to time. We encourage community musical gatherings - like the Kurdish morales - to mark times of victory and defeat. the time before the morale necessitates the morale, from sorrow or delight. we let our bodies drive our rituals."},
+    {"name": "prisons", "desc": "resisting domination of time by reclaiming felt time."}
   ]
 }

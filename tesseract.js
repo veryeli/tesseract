@@ -2,6 +2,37 @@
 const cssVar = (name, fallback) =>
   getComputedStyle(document.documentElement).getPropertyValue(name).trim() || fallback;
 
+
+// --- color helpers ---
+const hexToRgb = (hex) => {
+  const m = hex.replace('#','').match(/^([a-f0-9]{2})([a-f0-9]{2})([a-f0-9]{2})$/i);
+  if (!m) return {r:255,g:255,b:255};
+  return { r: parseInt(m[1],16), g: parseInt(m[2],16), b: parseInt(m[3],16) };
+};
+const rgbToHex = ({r,g,b}) =>
+  '#' + [r,g,b].map(v => Math.max(0,Math.min(255,Math.round(v))).toString(16).padStart(2,'0')).join('');
+const lerp = (a,b,t) => a + (b-a)*t;
+const lerpRgb = (a,b,t) => ({ r: lerp(a.r,b.r,t), g: lerp(a.g,b.g,t), b: lerp(a.b,b.b,t) });
+const cssToHex = (varName, fallback) => {
+  const v = getComputedStyle(document.documentElement).getPropertyValue(varName).trim();
+  return v && v.startsWith('#') ? v : fallback;
+};
+
+// base colors from CSS vars
+const HALO   = hexToRgb(cssToHex('--halo',   '#ffc6ff'));
+const GLOW   = hexToRgb(cssToHex('--glow',   '#7df9ff'));
+const ACCENT = hexToRgb(cssToHex('--accent', '#9fffb9'));
+
+// tri-blend across halo -> glow -> accent -> halo
+const triBlend = (t) => {
+  const seg = (t % 1) * 3;
+  if (seg < 1) return lerpRgb(HALO,   GLOW,   seg - 0);
+  if (seg < 2) return lerpRgb(GLOW,   ACCENT, seg - 1);
+  return        lerpRgb(ACCENT, HALO, seg - 2);
+};
+
+
+
 // Colors from your theme
 const outerColor = cssVar('--accent', '#9fffb9'); // outer cube
 const innerColor = cssVar('--glow',   '#7df9ff'); // inner cube
@@ -158,12 +189,27 @@ function animate() {
     anchorInner.rotate.z = 0.11 * TAU + 0.06 * Math.sin((pulse + 0.25) * TAU);
     updateLinks(s, anchorInner.rotate.z);
 
+
+    const baseT = (ticker % 360) / 360;   // 0..1 loop
+    links.forEach((lnk, i) => {
+      // slight per-edge phase offset prevents uniform flashing
+      const t = baseT + i / links.length * 0.15;
+      const rgb = triBlend(t);
+      const hex = rgbToHex(rgb);
+
+      lnk.shape.color = hex;
+
+      const breathe = 1 + 0.25 * Math.sin((baseT + i*0.07) * Zdog.TAU);
+      lnk.glow.stroke = strokeLink * 4.5 * breathe;
+
+      lnk.glow.color = `rgba(${Math.round(rgb.r)},${Math.round(rgb.g)},${Math.round(rgb.b)},0.18)`;
+    });
     // gentle wobble so it doesn’t roll off
     illo.rotate.z = wobble * Math.sin(rot * TAU * 0.5);
     ticker++;
   }
 
-  illo.updateRenderGraph();
-  requestAnimationFrame(animate);
-}
-animate();
+    illo.updateRenderGraph();
+    requestAnimationFrame(animate);
+  }
+  animate();
