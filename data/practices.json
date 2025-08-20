@@ -5,10 +5,10 @@
     "Practices also include land stewardship, communal meals, housing co‑ops, and collective celebrations. Alone we are a line; together we become a tesseract within the tesseract, stronger and holding endless tensions."
   ],
   "subpractices": [
-    {"name": "Morales", "desc": "Shared liberation music and performances to mark times of victory and defeat."},
-    {"name": "Prisons", "desc": "Resisting domination of time by reclaiming felt time."},
-    {"name": "Development", "desc": "Fortitude beyond resilience — sharing and creating housing, skills, and meals."},
-    {"name": "Eras", "desc": "A future beyond resilience already exists in cosmic fabric — immanent though outside immediate perception."},
-    {"name": "Territories", "desc": "Zapatistas, Rojava, the Cop City resistance, Standing Rock — places of immanent tesseract practice."}
+    {"name": "Development", "desc": "fortitude beyond resilience — sharing and creating housing, skills, and meals are ways to heal the world and help others escape colonial time."},
+    {"name": "Eras", "desc": "a future beyond resilience already exists in cosmic fabric — immanent though outside immediate perception."},
+    {"name": "Territories", "desc": "free territories have existed throughout time: Zapatistas, liberated Rojava, the Cop City resistance, Standing Rock — places of immanent tesseract practice. land is the physical manifestation of time. stewarding land and being in right relationship with it is core to our practices."},
+    {"name": "Morales", "desc": "shared music about people - is a core part of connection to time. We encourage community musical gatherings - like the Kurdish morales - to mark times of victory and defeat. the time before the morale necessitates the morale, from sorrow or delight. we let our bodies drive our rituals."},
+    {"name": "Prisons", "desc": "resisting domination of time by reclaiming felt time."}
   ]
 }

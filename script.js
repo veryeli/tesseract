@@ -51,6 +51,7 @@ const renderReadings = d => `
 /* Boot */
 document.addEventListener("DOMContentLoaded", () => {
   mountJSON("about", "data/about.json", renderCards);
+  mountJSON("enemies", "data/enemies.json", renderParagraphs);
   mountJSON("cosmology", "data/cosmology.json", renderParagraphs);
   mountJSON("practices", "data/practices.json", renderPractices);
   mountJSON("what-is-time", "data/time.json", renderParagraphs);

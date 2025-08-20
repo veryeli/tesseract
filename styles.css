@@ -66,6 +66,7 @@
       border:1px solid rgba(125,249,255,.25);
       box-shadow: 0 0 0 1px rgba(255,198,255,.15) inset, 0 10px 30px rgba(0,0,0,.4);
       backdrop-filter: blur(6px) saturate(120%);
+      margin: 18px;
     }
     .card h2{
       font-size: 18px; margin:0 0 6px; font-weight:800;
@@ -132,3 +133,7 @@
 @media (prefers-reduced-motion: reduce){
   .mark.tesseract{ animation: none; }
 }
+
+
+.logo-wrap { position: relative; display: flex; justify-content: center; perspective: 1200px; }
+.illo { filter: drop-shadow(0 0 12px rgba(125,249,255,.45)) drop-shadow(0 0 28px rgba(255,198,255,.25)); }

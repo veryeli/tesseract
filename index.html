@@ -9,11 +9,13 @@
   <meta property="og:description" content="A shimmering corner of the web for wonder, reflection, and four-dimensional joy." />
   <meta property="og:type" content="website" />
   <meta name="theme-color" content="#0b0f1a" />
+  <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Press+Start+2P&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
+  <script src="tesseract.js" defer></script>
 </head>
 <body>
 
@@ -24,7 +26,7 @@
   <header>
 
     <div class="logo-wrap">
-        <img src="assets/tesseract.svg" alt="Wireframe tesseract" class="mark tesseract" />
+      <canvas class="illo" width="200" height="200" aria-label="Animated tesseract"></canvas>
     </div>
 
     <h1 class="title">Church of the Tesseract</h1>
@@ -51,12 +53,8 @@
       <div data-mount="practices"></div>
     </section>
 
-      <article class="card">
-        <h2>Enemies</h2>
-        <p>
-          Our enemies are structures of power and control. We build solidarity in spaces beyond their hold. By reclaiming indigenous and inherent rites of time, we re-anchor ourselves in creation.
-        </p>
-      </article>
+    <section id="enemies" class="grid">
+      <div data-mount="enemies"></div>
     </section>
 
     <section id="what-is-time" class="grid">
@@ -71,8 +69,7 @@
       <article class="card">
         <h2>Join / Contact</h2>
         <p>
-          Want to share something or learn something? Interested in joining the Church of the Tesseract? We welcome all who seek liberation.
-          <a href="mailto:hello@tesseract.church" style="color:var(--glow); font-weight:700">hello@tesseract.church</a>
+          Interested in joining the Church of the Tesseract? We welcome all who seek liberation.
         </p>
       </article>
     </section>
