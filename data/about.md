@@ -1,6 +1,6 @@
 # the Church of the Tesseract
 
-is a community of people seeking a living, breathing relationship with the sacred instrument of time
+the church is a community of people seeking a living, breathing relationship with the sacred instrument of time
 
 we free ourselves from colonial rhythms and rediscover sacred connection with creation
 
@@ -9,33 +9,31 @@ gatherings reclaim time as sacred, to resist its capture by systems of extractio
 this is a religion for those in all diasporas from time-imminent communities. for people who may be areligious but are not aspiritual.
 
 
-# the Tesseract
-the Tesseract is a sacred instrument, extending in all dimensions, through time and space. it is present at the beginning and end of all things, and contains them.
 
-reality is layered, multiple, and richer than our first perspective. In the complex interlacing of the tesseract, all realities already exist.
+# the Tesseract
+the Tesseract, or God is a sacred instrument, extending in all dimensions, through time and space. it is present at the beginning and end of all things, and contains them. it is birth and death; growth and decay; it is all substance and all possible realities.
 
 the lines of power in the tesseract are lines of power in reality. through deeper connection to time and space, we can come to a deeper understanding of the structures that structure our reality.
 
 this increases our power to act.
 
-# our cosmology
-God is time, is birth and death and reincorporation, is substance. everything from the beginning to the end is contained within it.
-
-God is a hyperobject, extending in all directions within and beyond perception. we cultivate a living relationship with it and seek return to creation itself.
+a hyperobject, extending in all directions within and beyond perception. we cultivate a living relationship with it and seek return to creation itself.
 
 a future beyond resilience already exists in cosmic fabric — immanent though outside immediate perception.
 
-God is the way home from deep alienation. moving towards God, moving towards the tesseract, is moving into a community developing its own rhythms.
+the way home from deep alienation is through the Tesseract. moving towards it is moving into a community developing its own rhythms.
 
-# our practice
-is to heal the world through moving with it.
+# our core practice
 
-we keep in communication with ourselves and with all creation.
+**ritual** core to the practice is stepping out of colonial metronomes and into the rhythms immanent around us. these practices are contextual: rituals may include greeting or bidding farewell to the sun; honoring new and full moons, equinoxes and solstices. existing rituals may run even deeper than those we coin together; all paths are syncretic.
 
-we put our oxygen masks on so we can help others to also step out of colonial metronomes and into the rhythms immanent around us.
-these practices are contextual: rituals may include greeting or bidding farewell to the sun; honoring new and full moons, equinoxes and solstices. We embrace syncretic paths.
+**community** everyone contains a unique piece of God, and to know one another in our own rhythms is to approach God. sharing communal meals, creating safe shelter, and keeping one another safe and free is just as important as ritual.
 
-practices also include land stewardship, communal meals, housing co‑ops, and collective celebrations. alone we are a line; together we become a tesseract within the tesseract, stronger and holding endless tensions.
+**creation**  to be closer to creation is to heal it and ourselves. practices include creating moments and spaces in their own time: land stewardship, music, and moments of pure liberation.
+
+**understanding** we seek to understand, celebrate, and cocreate with others creating a more profound relationship to deep time. through these different rhythms we are approaching a shared horizon.
+
+alone we are each line; together we become a tesseract within the tesseract, stronger and holding endless tensions. no two practices are the same but all push for another world.
 
 
 # sub-practices
