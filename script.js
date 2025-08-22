@@ -1,49 +1,49 @@
-async function mountJSON(sectionId, url, render) {
-  const el = document.querySelector(`[data-mount="${sectionId}"]`);
-  if (!el) return;
-  const data = await fetch(url, { cache: "no-store" }).then(r => r.json());
-  el.innerHTML = render(data);
-}
+// --- utils ---
+const slug = (s) =>
+  s.toLowerCase().trim()
+   .replace(/[^a-z0-9\s-]/g, "")
+   .replace(/\s+/g, "-")
+   .replace(/-+/g, "-");
 
-async function mountHTML(sectionId, url) {
-  const el = document.querySelector(`[data-mount="${sectionId}"]`);
-  if (!el) return;
-  const html = await fetch(url, { cache: "no-store" }).then(r => r.text());
-  el.innerHTML = html;
-}
-
-/* Renderers */
-const renderParagraphs = d => `
- <section id=${d.title} class="grid">
-  <article class="card">
-    <h2>${d.title}</h2>
-    ${d.paragraphs.map(p => `<p>${p}</p>`).join("")}
-  </article>
-</section>
+// Render one section block
+const renderSection = (title, htmlBody) => `
+  <section id="${slug(title)}" class="grid">
+    <article class="card">
+      <h2>${title}</h2>
+      ${htmlBody}
+    </article>
+  </section>
 `;
 
-async function mountMarkdown(sectionId, url) {
-  const el = document.querySelector(`[data-mount="${sectionId}"]`);
+// Fetch .md, split by # Heading, render sections
+async function mountMarkdownSections(mountId, mdUrl) {
+  const el = document.querySelector(`[data-mount="${mountId}"]`);
   if (!el) return;
-  const md = await fetch(url, { cache: "no-store" }).then(r => r.text());
-  el.innerHTML = marked.parse(md);
+
+  const md = await fetch(mdUrl, { cache: "no-store" }).then(r => r.text());
+
+  // Split by top-level headings: lines starting with "# "
+  const parts = md.split(/\n(?=#\s+)/g); // keep first block even if it starts w/o heading
+  const sections = [];
+
+  for (const block of parts) {
+    // Extract title (first line starting with '# ')
+    const m = block.match(/^#\s+(.+)\s*$/m);
+    if (!m) {
+      // no title -> append to previous (or skip if empty)
+      if (sections.length) sections[sections.length - 1].body += "\n" + block;
+      continue;
+    }
+    const title = m[1].trim();
+    // Everything after the heading line is the body
+    const bodyMd = block.slice(block.indexOf(m[0]) + m[0].length).trim();
+    const bodyHtml = marked.parse(bodyMd);
+    sections.push({ title, html: bodyHtml });
+  }
+
+  el.innerHTML = sections.map(s => renderSection(s.title, s.html)).join("");
 }
 
-
-const renderCards = d => {
-    const cards = d.cards || [];
-    return cards.map(c => `
-      <section id=${c.title} class="grid">
-    <article class="card">
-    <h2>${c.title}</h2>
-    ${(c.paragraphs || []).map(p => `<p>${p}</p>`).join("")}
-    </article>
-    </section>
-    `).join("");
-};
-
-
-/* Boot */
 document.addEventListener("DOMContentLoaded", () => {
-  mountJSON("about", "data/about.json", renderCards);
+  mountMarkdownSections("about", "data/about.md");
 });
