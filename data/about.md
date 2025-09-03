@@ -72,4 +72,4 @@ time is not linear, it swirls out, fractal-like in all directions, and is differ
 * Starhawk — <em>The Fifth Sacred Thing</em>
 
 # join
-interested in joining the Church of the Tesseract? we welcome all who seek liberation. for now, you can start by developing a practice. soon, contact information will be available.
+interested in joining the Church of the Tesseract? we welcome all who seek liberation. for now, you can start by developing a practice, or reach out at [tesseractchurch@riseup.net](mailto:tesseractchurch@riseup.net)!
