@@ -9,21 +9,17 @@ gatherings reclaim time as sacred, to resist its capture by systems of extractio
 this is a religion for those in all diasporas from time-imminent communities. for people who may be areligious but are not aspiritual.
 
 # the Tesseract
-the Tesseract, or God is a sacred instrument, extending in all dimensions, through time and space. it is present at the beginning and end of all things, and contains them. it is birth and death; growth and decay; it is all substance and all possible realities.
+the Tesseract extends in all dimensions. it is present at the beginning and end of all things. it is birth and death; growth and decay; it is all substance and all possible realities. to return to our pre-alienated state, we must cultivate a living, breathing relationship with the Tesseract.
 
-the lines of power in the tesseract are lines of power in reality. through deeper connection to time and space, we can come to a deeper understanding of the structures that structure our reality.
+the lines of power within the tesseract are lines of power in reality; so through deeper connection, we can come to a deeper and more strategic understanding of the structures that structure our reality.
 
 this increases our power to act.
 
-a hyperobject, extending in all directions within and beyond perception. we cultivate a living relationship with it and seek return to creation itself.
-
-a future beyond resilience already exists in cosmic fabric — immanent though outside immediate perception.
-
-the way home from deep alienation is through the Tesseract. moving towards it is moving into a community developing its own rhythms.
+a future already exists in cosmic fabric — immanent but outside immediate perception.
 
 # our core practice
 
-our practice is more an attitude towards time than a rigid set of practices. people who greet the sunrise or celebrate the waking of their loved ones or practice profound rest periodically are defining a rhythm. syncretism, the practice of combining traditions in locally specific ways, is the only way to create a living relationship to time.
+our practice is an attitude towards time, not a rigid set of practices. people who greet the sunrise or celebrate the waking of their loved ones or practice profound rest periodically are defining a rhythm. syncretism, the practice of combining traditions in locally specific ways, is the only way to create a living relationship to time.
 
 **ritual** core to the practice is stepping out of colonial metronomes and into the rhythms immanent around us. these practices are contextual: rituals may include greeting or bidding farewell to the sun; honoring new and full moons, equinoxes and solstices. existing rituals may run even deeper than those we coin together; all paths are syncretic.
 
