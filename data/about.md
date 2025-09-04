@@ -8,8 +8,6 @@ gatherings reclaim time as sacred, to resist its capture by systems of extractio
 
 this is a religion for those in all diasporas from time-imminent communities. for people who may be areligious but are not aspiritual.
 
-
-
 # the Tesseract
 the Tesseract, or God is a sacred instrument, extending in all dimensions, through time and space. it is present at the beginning and end of all things, and contains them. it is birth and death; growth and decay; it is all substance and all possible realities.
 
@@ -25,6 +23,8 @@ the way home from deep alienation is through the Tesseract. moving towards it is
 
 # our core practice
 
+our practice is more an attitude towards time than a rigid set of practices. people who greet the sunrise or celebrate the waking of their loved ones or practice profound rest periodically are defining a rhythm. syncretism, the practice of combining traditions in locally specific ways, is the only way to create a living relationship to time.
+
 **ritual** core to the practice is stepping out of colonial metronomes and into the rhythms immanent around us. these practices are contextual: rituals may include greeting or bidding farewell to the sun; honoring new and full moons, equinoxes and solstices. existing rituals may run even deeper than those we coin together; all paths are syncretic.
 
 **community** everyone contains a unique piece of God, and to know one another in our own rhythms is to approach God. sharing communal meals, creating safe shelter, and keeping one another safe and free is just as important as ritual.
@@ -33,7 +33,7 @@ the way home from deep alienation is through the Tesseract. moving towards it is
 
 **understanding** we seek to understand, celebrate, and cocreate with others creating a more profound relationship to deep time. through these different rhythms we are approaching a shared horizon.
 
-alone we are each line; together we become a tesseract within the tesseract, stronger and holding endless tensions. no two practices are the same but all push for another world.
+alone we are each lines; together we become a tesseract within the tesseract, stronger and holding endless tensions. no two practices are the same but all push for another world.
 
 
 # sub-practices
@@ -59,13 +59,13 @@ in this life, we mark time, or have it marked for us. for too many of us it is c
 we're meant to feel disoriented; they've stolen rites and connections.
 
 # what is time
-we understand time's sacred relationship to us. we free ourself to be closer to creation itself.
 
-time is not linear, it swirls out, fractal-like in all directions, and is different for each of us. to know God we must know strangers and neighbors. we welcome diverse relationships to time and God, embracing diverging practices."
+
+time is not linear; it swirls out, in all directions, and is different for each of us.
 
 
 # suggested readings
-* Carlo Rovelli — <em>The Order of Time</em>
+* Carlo Rovelli — <em>[The Order of Time](https://esami.nwtdemos.com/wp-content/uploads/2023/08/The-Order-of-Time-Carlo-Rovelli.pdf)</em>
 * Benedict Spinoza — <em>Ethics</em>
 * Timothy Morton — <em>Hyperobjects: Philosophy and Ecology after the End of the World</em>
 * Octavia E. Butler — <em>Parable of the Sower / Parable of the Talents</em>
