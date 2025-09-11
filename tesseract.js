@@ -58,7 +58,6 @@ function setCanvasSize() {
   return zoom;
 }
 let zoom = setCanvasSize();
-window.addEventListener('resize', () => { zoom = setCanvasSize(); illo.updateRenderGraph(); });
 
 // Illustration
 const illo = new Zdog.Illustration({
